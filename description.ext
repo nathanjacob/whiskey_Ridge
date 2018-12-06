@@ -1,0 +1,77 @@
+//Fast Travel system
+#include "dialogs\defines.hpp"
+#include "dialogs\FastTravelDialog.hpp"
+
+class RscTitles {
+	#include "dialogs\FastTravelHUD.hpp"
+};
+
+//respawnTemplates[] = {"MenuPosition"};
+//respawnTemplateWest[] = {"MenuPosition"};
+
+
+
+
+
+
+
+class Params
+{
+	class TimeOfDay {
+		title = "Time of Day";
+		values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
+		texts[] = {"0000","0100","0200","0300","0400","0500","0600","0700","0800","0900","1000","1100","1200","1300","1400","1500","1600","1700","1800","1900","2000","2100","2200","2300"};
+		default = 12;
+	};
+	
+	class TimeMultiply {
+		title = "Time Acceleration";
+		values[] = {1,4,6,12,24,48};
+		texts[] = {"1x","4x","6x","12x","24x","48x"};
+		default = 6;
+	};
+
+	class Weather {
+		title = "Weather";
+		values[] = {1,2,3,4};
+		texts[] = {"Clear", "Stormy", "Cloudy", "Foggy"};
+		default = 1;
+	};
+		
+	class maxView {
+		title = "View Distance";
+		values[] = {2000,3000,4000,5000,6000,7000,8000,10000};
+		texts[] = {"2000","3000","4000","5000","6000","7000","8000","10000"};
+		default = 5000;
+	};
+	
+	class PlayerFatigue {
+		title = "Player Fatigue";
+		values[] = {0,1};
+		texts[] = {"Fatigue Disabled","Fatigue Enabled"};
+		default = 0;
+	};	
+			
+	
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+			
+			
+
