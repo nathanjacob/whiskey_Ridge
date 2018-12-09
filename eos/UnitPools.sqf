@@ -75,16 +75,16 @@ _tempArray=[];
 };
 // ADD CLASSNAMES 
 	if (_faction==5) then {
-	_InfPool=	["TBan_Fighter2","TBan_Fighter3","TBan_Fighter4","TBan_Fighter5","TBan_Fighter6","TBan_Recruit","TBan_Recruit2","TBan_Recruit5","TBan_Recruit6","TBan_Recruit3","TBan_Recruit4","TBan_Warlord"];	
-	_ArmPool=	[];
-	_MotPool=	["B_G_Offroad_01_F","B_G_Offroad_01_armed_F","B_G_Van_01_transport_F","B_G_Van_01_fuel_F"];
+	_InfPool=	ME_Militia_Inf;	
+	_ArmPool=	ME_Militia_Armor;
+	_MotPool=	ME_Militia_Cars;
 	_ACHPool=	[];
 	_CHPool=	[];
 	_uavPool=	[];
-	_stPool=	["rhs_Kornet_9M133_2_msv","RHS_AGS30_TriPod_MSV","rhs_KORD_high_MSV","RHS_NSV_TriPod_MSV","rhs_SPG9M_MSV"];
+	_stPool=	ME_Militia_Static;
 	_shipPool=	[];
 	_diverPool=	[];
-	_crewPool=	["TBan_Fighter2","TBan_Fighter3","TBan_Fighter4","TBan_Fighter5"];
+	_crewPool=	ME_Militia_Inf;
 	_heliCrew=	[];
 	};
 	
@@ -104,16 +104,16 @@ _tempArray=[];
 	
 // ADD CLASSNAMES 	
 	if (_faction==7) then {
-	_InfPool=	["Afghan_Civilian2","Afghan_Civilian2NH","Afghan_civilian3","Afghan_civilian3NH","Afghan_Civilian4","Afghan_Civilian5", "Afghan_Civilian6","Afghan_Civilian6NH","Afghan_civilian1","Afghan_civilian1NH"];	
+	_InfPool=	Afghan_Civ_Inf;	
 	_ArmPool=	[];
-	_MotPool=	["C_Truck_02_fuel_F","C_Truck_02_transport_F","C_Truck_02_covered_F","RHS_Ural_Civ_01","RHS_Ural_Open_Civ_03","RHS_Ural_Civ_02","RHS_Ural_Open_Civ_02","C_Offroad_01_F"];
+	_MotPool=	Afgan_Civ_Cars;
 	_ACHPool=	[];
 	_CHPool=	[];
 	_uavPool=	[];
 	_stPool=	[];
 	_shipPool=	[];
 	_diverPool=	[];
-	_crewPool=	["Afghan_Civilian2","Afghan_Civilian2NH","Afghan_civilian3","Afghan_civilian3NH","Afghan_Civilian4","Afghan_Civilian5", "Afghan_Civilian6","Afghan_Civilian6NH","Afghan_civilian1","Afghan_civilian1NH"];
+	_crewPool=	Afghan_Civ_Inf;
 	_heliCrew=	[];};
 	
 ////////////////////////////////////////////////////////////////////////////////////////

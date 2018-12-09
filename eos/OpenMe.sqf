@@ -46,7 +46,9 @@ while {(getmarkerColor _checkString) != ""} do {
 	_checkNum = _checkNum + 1;
 	_checkString = "OPFOR_zone_" + str _checkNum;
 };
-	
+
+civLocations = [];
+civLocations = _builtArray;
 	
 null =[_builtArray,
 [6,2],
