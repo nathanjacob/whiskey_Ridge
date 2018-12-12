@@ -23,7 +23,7 @@ armed deleteGroupWhenEmpty true;
 
 _checkNum = 1;
 _checkString = "spawnBuilding_" + str _checkNum;
-_checkObj = missionNameSpace getVariable _checkString;
+_checkObj = missionNameSpace getVariable [_checkString, objNull];
 
 
 
@@ -32,7 +32,7 @@ while {!(_checkObj isEqualto objNull)} do
 	buildings pushBack  _checkObj;
 	_checkNum = _checkNum + 1;
 	_checkString = "spawnBuilding_" + str _checkNum;
-	_checkObj = missionNameSpace getVariable _checkString;
+	_checkObj = missionNameSpace getVariable [_checkString, objNull];
 };
 
 //Determine where squads will originate
@@ -125,8 +125,10 @@ spawnClear setTriggerStatements ["this","","[] call fnc_spawnSquads;"];
 [] call fnc_spawnSquads;
 
 //create cache location
-target =  (selectRandom buildings);
-while {(target isEqualto spawnPoint)} do {target = (selectRandom buildings);};
+
+target =  selectRandom buildings;
+
+while {(target isEqualto spawnPoint)} do {target = selectRandom buildings;};
 [] call fnc_createCache;
 
 //Begin unarmed squad deployment
