@@ -135,6 +135,7 @@ RD_fnc_leafletCheck = {
 			};
 		};
 		*/
+	//civLocations is defined in eos\openMe.sqf. That array is built already for that script to utilize.
 	}forEach civLocations;
 	
 	_unit = nil;

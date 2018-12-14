@@ -62,6 +62,8 @@ armedSquads = 1; //Counter for armed squad limit
 [] execVM "RD_Scripts\unarmed_armed.sqf";
 [] execVM "RD_Scripts\civilian_asset_management.sqf";
 [] execVM "RD_Scripts\antiAir_asset_management.sqf";
+[] execVM "RD_Scripts\opfor_management.sqf";
+
 
 
 
