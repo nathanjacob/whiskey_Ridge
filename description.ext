@@ -6,8 +6,8 @@ class RscTitles {
 	#include "dialogs\FastTravelHUD.hpp"
 };
 
-//respawnTemplates[] = {"MenuPosition"};
-//respawnTemplateWest[] = {"MenuPosition"};
+respawnTemplates[] = {"MenuPosition"};
+respawnTemplateWest[] = {"MenuPosition"};
 
 
 

@@ -63,6 +63,9 @@ armedSquads = 1; //Counter for armed squad limit
 [] execVM "RD_Scripts\civilian_asset_management.sqf";
 [] execVM "RD_Scripts\antiAir_asset_management.sqf";
 [] execVM "RD_Scripts\opfor_management.sqf";
+[] execVM "RD_Scripts\spawnManager.sqf";
+[] execVM "RD_Scripts\sniperSquad.sqf";
+
 
 
 
@@ -73,13 +76,14 @@ armedSquads = 1; //Counter for armed squad limit
  //Stuff that isn't mine that I want included
 [] execVM "scripts\fn_advancedTowingInit.sqf"; 	//Give advanced towing capability to vehicles
 [] execVM "eos\OpenMe.sqf";						//Allows the Enemy Occupation Script
+[] execVM "scripts\ied.sqf";					//IED Placement script
 
 
 
 //Re Enable before using as MP mission
 //This sets respawn positions for MP game
-//airbaseRespawn = [west, (getmarkerPos "kindufAirfield"), "Kinduf Airbase"] call BIS_fnc_addRespawnPosition;
-//outpostRespawn = [west, (getmarkerPos "OP_Conflict"), "OP Conflict"] call BIS_fnc_addRespawnPosition;
+airbaseRespawn = [west, (getmarkerPos "kindufAirfield"), "Kinduf Airbase"] call BIS_fnc_addRespawnPosition;
+outpostRespawn = [west, (getmarkerPos "OP_Conflict"), "OP Conflict"] call BIS_fnc_addRespawnPosition;
 
 
 

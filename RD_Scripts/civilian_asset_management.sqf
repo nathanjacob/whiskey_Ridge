@@ -148,7 +148,7 @@ RD_fnc_leafletCheck = {
 //For now leaflet capability is only available at hardcoded target area
 
 //Whiplash20 is a testing unit make sure to delete
-(Whiplash20) addEventHandler ["Fired",{[_this select 0, _this select 1] call RD_fnc_leafletCheck; }];
+//(Whiplash20) addEventHandler ["Fired",{[_this select 0, _this select 1] call RD_fnc_leafletCheck; }];
 
 (Whiplash0) addEventHandler ["Fired",{[_this select 0, _this select 1] call RD_fnc_leafletCheck; }];
 (Gunslinger0) addEventHandler ["Fired",{[_this select 0, _this select 1] call RD_fnc_leafletCheck; }];
