@@ -10,3 +10,9 @@ if ((paramsArray select 4) == 0) then {
 
 //Need to revisit this addRating crap at some point this is simply here for testing purposes
 _unit addRating 2000;
+0 enableChannel [false, false];
+1 enableChannel [false, false];
+2 enableChannel [false, false];
+5 enableChannel [false, false];
+6 enableChannel [false, false];
+

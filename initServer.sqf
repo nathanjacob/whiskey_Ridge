@@ -87,6 +87,7 @@ outpostRespawn = [west, (getmarkerPos "OP_Conflict"), "OP Conflict"] call BIS_fn
 
 
 
+
 //I need to learn a better way to handle this crap. This isn't great loops are dumb AF
 
 [] spawn {

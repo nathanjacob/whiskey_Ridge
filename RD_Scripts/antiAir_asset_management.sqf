@@ -85,7 +85,7 @@ RD_fnc_rotateRadar = {
 	
 	_radar = _this select 0;
 
-	while {true} do {
+	while {alive _radar} do {
 		{
 			_radar lookAt (_radar getRelPos [100, _x]);
 			sleep 2.45;
@@ -99,6 +99,7 @@ RD_fnc_chooseRadar = {
 	
 	//_radarList deleteAt (floor random (count _radarList));
 	_radarChoice = selectRandom _radarList;
+	_radarChoice addMPEventHandler ["mpkilled", {["AA_Objective","SUCCEEDED", true] call BIS_fnc_taskSetState;}];
 	
 	
 	
@@ -113,7 +114,7 @@ RD_fnc_chooseRadar = {
 	
 	}forEach _radarList;
 	
-	
+	[west,["AA_Objective"],["Locate and Destroy Radar","Locate and Destroy Radar","Destroy Radar"],(getMarkerPos "AA_obj"),true,0,true,"destroy",true] call BIS_fnc_taskCreate;
 		
 
 };

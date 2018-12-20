@@ -3,7 +3,7 @@
 
 RD_fnc_buildSniperNests = {
 
-	hint "Building Sniper Nests";
+	
 	_sniperNests = [];
 	_checkNum = 1;
 	_checkString = "sniper_nest_" + str _checkNum;
